@@ -3,24 +3,24 @@ public class Tags {
   private String nome;
   private String categoria;
 
-      public Tags () {}
+    public Tags () {}
 
-      public Tags (String nome, String categoria) {
+    public Tags (String nome, String categoria) {
           
           this.nome = nome;
           this.categoria = categoria;
       }
 
-      public String getNome() {
+    public String getNome() {
           return nome;
       }
-      public void setNome(String nome) {
+    public void setNome(String nome) {
           this.nome = nome;
       }
-      public String getCategoria() {
+    public String getCategoria() {
           return categoria;
       }
-      public void setCategoria(String categoria) {
+    public void setCategoria(String categoria) {
           this.categoria = categoria;
       }
 }
