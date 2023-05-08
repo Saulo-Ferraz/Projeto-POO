@@ -85,6 +85,8 @@ public class Usuario {
             System.out.println("Informe a Data: ");
             playlist.setData(sc.next());
 
+            playlist.setCriador(Usuario);
+
             return playlist;
     }
    
@@ -92,6 +94,29 @@ public class Usuario {
         Playlist playlist = criaPlaylist();
 
         playlists.add(playlist);
+    }
+
+    private Post criaPost() {
+
+            Post post = new Post();
+
+            System.out.println("Informe o Título do Post: ");
+            post.setTitulo(sc.next());
+            System.out.println("Qual a categoria do Post: ");
+            post.setCategoria(sc.next());
+            System.out.println("Insira o texto do Post: ");
+            post.setTexto(sc.next());
+            System.out.println("Informe a Data: ");
+            post.setData(sc.next());
+
+            post.setAutor(Usuario);
+
+            return post;
+    }
+
+    public void criarPost(){
+
+        Post post = criaPost();
     }
 
 }
